@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgfgvf23q5aig"]
+
+[ext_resource type="PackedScene" uid="uid://caehguca2uyiy" path="res://character/character.tscn" id="1_xvp2o"]
+[ext_resource type="Script" path="res://character/enemy/enemy.gd" id="2_m2bn4"]
+[ext_resource type="Texture2D" uid="uid://c41e31ouax77t" path="res://character/enemy/textures/slime.png" id="3_x5xyo"]
+
+[node name="Enemy" instance=ExtResource("1_xvp2o")]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("2_m2bn4")
+speed = null
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("3_x5xyo")
